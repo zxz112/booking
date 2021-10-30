@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    background: $orange;
+    font-size: 24px;
+    &--link, &--link:active, &--link:hover {
+        color: white;
+        text-decoration: none;
+    }
+    &--link {
+        display: block;
+        padding: 10px;
+        color: white;
+        transition: all .5s;
+        &:hover {
+            background: darken($orange, 5%);
+            color: white;
+            font-weight: 700;
+        }
+    }
+}
+
+.v-enter-active, .v-leave-active {
+    transition: opacity 2s;
+}
+.v-enter, .v-leave-to {
+    opacity: 0;
+}
